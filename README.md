@@ -1,6 +1,9 @@
 # Check Image Size Nutriclub
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![Python](https://img.shields.io/badge/python-3.7%2B-blue.svg)](https://www.python.org/)
+[![Dependencies](https://img.shields.io/badge/dependencies-passed-brightgreen)](requirements.txt)
+[![Last Commit](https://img.shields.io/github/last-commit/maazway/check-image-size-nutriclub)](https://github.com/maazway/check-image-size-nutriclub/commits/main)
 
 ---
 
@@ -33,6 +36,7 @@ To run this project in your local environment, follow these steps:
 2.  **Create and activate a virtual environment (recommended):**
     ```bash
     python -m venv venv
+
     # On Windows:
     venv\Scripts\activate
 

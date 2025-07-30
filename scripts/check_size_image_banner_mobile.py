@@ -9,7 +9,7 @@ from urllib.parse import urljoin
 
 # Konfigurasi
 INPUT_CSV = "data/url_artikel.csv"
-OUTPUT_CSV = "output/result_checking_mobile.csv"
+OUTPUT_CSV = "output/result_checking_size_banner_mobile.csv"
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Mobile/15E148 Safari/604.1",
@@ -83,7 +83,7 @@ def process_urls_streaming(urls, output_path):
             try:
                 response = requests.get(url, headers=HEADERS, timeout=10)
                 if response.status_code != 200:
-                    status = f"Halaman gagal ({response.status_code})"
+                    status = f"Halaman gagal dimuat ({response.status_code})"
                     raise Exception()
 
                 soup = BeautifulSoup(response.text, "html.parser")
